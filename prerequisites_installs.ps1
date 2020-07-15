@@ -1,0 +1,4 @@
+﻿Start-Process "msiexec.exe" -Wait -ArgumentList '/I  D:\michalf\Documents\Customer\support_doc\ST-Teams\BH_POC\BotDeploymentScript\Release\Publish\HueBot_Deployment_Package\Prerequisites\SpeechPlatformRuntime.msi /quiet'-NoNewWindow
+Start-Process "msiexec.exe" -Wait -ArgumentList '/I  D:\michalf\Documents\Customer\support_doc\ST-Teams\BH_POC\BotDeploymentScript\Release\Publish\HueBot_Deployment_Package\Prerequisites\MSSpeech_SR_en-US_TELE.msi /quiet'-NoNewWindow 
+Start-Process "msiexec.exe" -Wait -ArgumentList '/I  D:\michalf\Documents\Customer\support_doc\ST-Teams\BH_POC\BotDeploymentScript\Release\Publish\HueBot_Deployment_Package\Prerequisites\MSSpeech_TTS_en-US_Helen.msi /quiet'-NoNewWindow 
+Start-Process -Wait -FilePath "D:\michalf\Documents\Customer\support_doc\ST-Teams\BH_POC\BotDeploymentScript\Release\Publish\HueBot_Deployment_Package\Prerequisites\vcredist_x64_14.25.28508.3_VS2019.exe" -ArgumentList '/S','/v','/qn' -passthru
